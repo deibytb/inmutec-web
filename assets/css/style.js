@@ -11,7 +11,6 @@ export default StyleSheet.create({
   'h2': {
     'paddingTop': [{ 'unit': 'px', 'value': 50 }],
     'textTransform': 'uppercase',
-    'paddingBottom': [{ 'unit': 'px', 'value': 20 }],
     'color': '#000'
   },
   'h3': {
@@ -20,6 +19,10 @@ export default StyleSheet.create({
     'textAlign': 'center',
     'fontWeight': '900',
     'textTransform': 'uppercase'
+  },
+  'h4': {
+    'fontSize': [{ 'unit': 'px', 'value': 20 }],
+    'paddingTop': [{ 'unit': 'px', 'value': 10 }]
   },
   'section': {
     'paddingTop': [{ 'unit': 'px', 'value': 30 }],
@@ -32,6 +35,20 @@ export default StyleSheet.create({
   'p': {
     'padding': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 0 }]
   },
+  'button': {
+    'backgroundColor': '#AEC225',
+    'width': [{ 'unit': 'px', 'value': 180 }],
+    'height': [{ 'unit': 'px', 'value': 40 }],
+    'borderRadius': '20px',
+    'border': [{ 'unit': 'px', 'value': 2 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#AEC225' }],
+    'color': 'white',
+    'textTransform': 'uppercase',
+    'fontWeight': '700',
+    'fontSize': [{ 'unit': 'px', 'value': 14 }]
+  },
+  'button:hover': {
+    'backgroundColor': '#90A116'
+  },
   // =====================================
   NAVBAR STYLES
   ===================================
@@ -43,7 +60,8 @@ export default StyleSheet.create({
     'color': '#26A6D1',
     'fontSize': [{ 'unit': 'px', 'value': 12 }],
     'fontWeight': '900',
-    'letterSpacing': [{ 'unit': 'px', 'value': 1 }]
+    'letterSpacing': [{ 'unit': 'px', 'value': 1 }],
+    'borderBottom': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#26A6D1' }]
   },
   'navbar-inverse': {
     'borderColor': 'transparent'
@@ -53,6 +71,9 @@ export default StyleSheet.create({
   },
   'navbar-inverse navbar-nav>li>a:hover': {
     'color': '#26A6D1'
+  },
+  'navbar-inverse navbar-nav>li>a:focus': {
+    'color': '#AEC225'
   },
   'home-mail': {
     'fontSize': [{ 'unit': 'px', 'value': 12 }],
@@ -92,6 +113,13 @@ export default StyleSheet.create({
     'color': '#fff',
     'backgroundAttachment': 'fixed'
   },
+  'header-sec p': {
+    'fontSize': [{ 'unit': 'px', 'value': 16 }],
+    'marginBottom': [{ 'unit': 'px', 'value': 20 }]
+  },
+  'header-sec img': {
+    'height': [{ 'unit': 'px', 'value': 70 }]
+  },
   'header-sec overlay': {
     'background': '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0.2)), color-stop(100%,rgba(29,29,29,1)))',
     'minHeight': [{ 'unit': 'px', 'value': 500 }]
@@ -101,29 +129,50 @@ export default StyleSheet.create({
     'paddingTop': [{ 'unit': 'px', 'value': 150 }]
   },
   // =====================================
-  TESTIMONIALS STYLES
+  NOSOTROS
   ===================================
-  'testi-sec': {
+  'nosotros media-body': {
+    'textAlign': 'center'
+  },
+  'nosotros media-body i': {
+    'color': '#26A6D1'
+  },
+  'nosotros media-body p': {
+    'textAlign': 'left'
+  },
+  // =====================================
+  SERVICIOS
+  ===================================
+  'servicios': {
     'paddingTop': [{ 'unit': 'px', 'value': 10 }],
     'paddingBottom': [{ 'unit': 'px', 'value': 60 }],
-    'background': 'url(../img/head.png) no-repeat center center',
+    'background': 'url(../img/servicios.png) no-repeat center center',
     'padding': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }],
     'WebkitBackgroundSize': 'cover',
     'backgroundSize': 'cover',
     'color': '#fff',
     'backgroundAttachment': 'fixed'
   },
-  'testi-sec overlay': {
-    'background': '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0.2)), color-stop(100%,rgba(29,29,29,1)))',
+  'servicios overlay': {
+    'background': '-webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(30,30,30,0.5)), color-stop(50%,rgba(30,30,30,0.5)))',
     'minHeight': [{ 'unit': 'px', 'value': 300 }]
   },
-  'testi-sec h3': {
+  'servicios h3': {
     'color': '#fff',
     'paddingTop': [{ 'unit': 'px', 'value': 60 }],
     'paddingBottom': [{ 'unit': 'px', 'value': 30 }]
   },
-  'testi-sec h4': {
+  'servicios h4': {
     'lineHeight': [{ 'unit': 'px', 'value': 35 }]
+  },
+  'servicios service': {
+    'marginBottom': [{ 'unit': 'px', 'value': 50 }]
+  },
+  'servicios service i': {
+    'color': '#B3D3DE'
+  },
+  'servicios button': {
+    'marginBottom': [{ 'unit': 'px', 'value': 60 }]
   },
   // =====================================
   PRICING STYLES

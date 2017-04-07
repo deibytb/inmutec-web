@@ -10,7 +10,6 @@ body {
 h2 {
   padding-top: 50px;
   text-transform: uppercase;
-  padding-bottom: 20px;
   color: #000;
 }
 
@@ -20,6 +19,11 @@ h3 {
   text-align: center;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+h4 {
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 section {
@@ -36,6 +40,21 @@ p {
   padding: 10px 0px;
 }
 
+button {
+  background-color: #AEC225;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #AEC225;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #90A116;
+}
 
 /*=====================================
   NAVBAR STYLES
@@ -51,6 +70,7 @@ p {
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1px;
+  border-bottom: 1px solid #26A6D1;
 }
 
 .navbar-inverse {
@@ -60,6 +80,9 @@ p {
 .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-nav>li>a:hover {
   color: #26A6D1;
+}
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #AEC225;
 }
 
 .home-mail {
@@ -97,6 +120,13 @@ p {
   color: #fff;
   background-attachment: fixed;
 }
+.header-sec p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.header-sec img {
+  height: 70px;
+}
 
 .header-sec .overlay {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0.2)), color-stop(100%,rgba(29,29,29,1)));
@@ -109,14 +139,33 @@ p {
 }
 
 
+
 /*=====================================
-  TESTIMONIALS STYLES
+  NOSOTROS
   ===================================*/
 
-.testi-sec {
+.nosotros .media-body {
+  text-align: center
+}
+
+.nosotros .media-body i {
+  color: #26A6D1;
+}
+
+.nosotros .media-body p {
+  text-align: left
+}
+
+
+
+/*=====================================
+  SERVICIOS
+  ===================================*/
+
+.servicios {
   padding-top: 10px;
   padding-bottom: 60px;
-  background: url(../img/head.png) no-repeat center center;
+  background: url(../img/servicios.png) no-repeat center center;
   padding: 0;
   -webkit-background-size: cover;
   background-size: cover;
@@ -124,19 +173,31 @@ p {
   background-attachment: fixed;
 }
 
-.testi-sec .overlay {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0.2)), color-stop(100%,rgba(29,29,29,1)));
+.servicios .overlay {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(30,30,30,0.5)), color-stop(50%,rgba(30,30,30,0.5)));
   min-height: 300px;
 }
 
-.testi-sec h3 {
+.servicios h3 {
   color: #fff;
   padding-top: 60px;
   padding-bottom: 30px;
 }
 
-.testi-sec h4 {
+.servicios h4 {
   line-height: 35px;
+}
+
+.servicios .service {
+  margin-bottom: 50px;
+}
+
+.servicios .service i {
+  color: #B3D3DE;
+}
+
+.servicios button {
+  margin-bottom: 60px;
 }
 
 
