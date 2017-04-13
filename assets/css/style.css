@@ -40,7 +40,7 @@ p {
   padding: 10px 0px;
 }
 
-button {
+.button.primary {
   background-color: #AEC225;
   width: 180px;
   height: 40px;
@@ -52,7 +52,7 @@ button {
   font-size: 14px;
 }
 
-button:hover {
+.button.primary:hover {
   background-color: #90A116;
 }
 
