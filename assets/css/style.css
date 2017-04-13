@@ -77,9 +77,11 @@ button:hover {
   border-color: transparent;
 }
 
-.navbar-inverse .navbar-nav>li>a,
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a {
   color: #26A6D1;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #AEC225;
 }
 .navbar-inverse .navbar-nav>li>a:focus {
   color: #AEC225;
@@ -129,7 +131,7 @@ button:hover {
 }
 
 .header-sec .overlay {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0.2)), color-stop(100%,rgba(29,29,29,1)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,0.3)), color-stop(100%,rgba(29,29,29,1)));
   min-height: 500px;
 }
 
