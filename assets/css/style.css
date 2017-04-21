@@ -43,13 +43,15 @@ p {
 .button.primary {
   background-color: #AEC225;
   width: 180px;
-  height: 40px;
+  padding: 10px 40px;
   border-radius: 20px;
   border: 2px solid #AEC225;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  text-decoration: transparent;
+  line-height: 30px;
 }
 
 .button.primary:hover {
@@ -164,6 +166,13 @@ p {
   SERVICIOS
   ===================================*/
 
+.bx-wrapper {
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+}
+
 .servicios {
   padding-top: 10px;
   padding-bottom: 60px;
@@ -176,7 +185,7 @@ p {
 }
 
 .servicios .overlay {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(30,30,30,0.5)), color-stop(50%,rgba(30,30,30,0.5)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.6)), color-stop(50%,rgba(30,30,30,0.6)));
   min-height: 300px;
 }
 
